@@ -1,0 +1,18 @@
+.createTask{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap:5vh;
+    align-items: center;
+}
+
+.taskContainer{
+    display:flex;
+    flex-direction: column;
+    width: 50vw;
+    gap:2vh;
+}
+
+.submitBtn{
+    width:6vw;
+}
