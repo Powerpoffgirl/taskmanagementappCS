@@ -13,7 +13,7 @@ const UpdateTask = () => {
   const id = localStorage.getItem("id");
   console.log(id);
   useEffect(() => {
-    fetch(`http://localhost:3001/homePage/${id}`, {
+    fetch(`https://task-management-server1.onrender.com/homePage/${id}`, {
       method: "GET", // *GET, POST, PUT, DELETE, etc.
     })
       .then((response) => response.json())

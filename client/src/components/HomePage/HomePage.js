@@ -11,7 +11,7 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3001/homePage`)
+    fetch(`https://task-management-server1.onrender.com/homePage`)
       .then((response) => response.json())
       .then((response) => {
         setTasksData(response);
@@ -31,7 +31,7 @@ const HomePage = () => {
   };
 
   const handleView = (id) => {
-    fetch(`http://localhost:3001/homePage/${id}`, {
+    fetch(`https://task-management-server1.onrender.com/homePage/${id}`, {
       method: "GET", // *GET, POST, PUT, DELETE, etc.
     })
       .then((response) => response.json())
@@ -46,7 +46,7 @@ const HomePage = () => {
   };
 
   const handleDelete = async (id) => {
-    fetch(`http://localhost:3001/homePage/${id}`, {
+    fetch(`https://task-management-server1.onrender.com/homePage/${id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
@@ -99,7 +99,7 @@ const HomePage = () => {
     const obj = tasksData.map((item) => {
       if (item._id == e) {
         item.taskCompleted = true;
-        fetch(`http://localhost:3001/homePage/${e}`, {
+        fetch(`https://task-management-server1.onrender.com/homePage/${e}`, {
           method: "PUT", // *GET, POST, PUT, DELETE, etc.
           headers: {
             "Content-Type": "application/json",

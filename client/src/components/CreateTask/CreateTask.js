@@ -24,7 +24,7 @@ const CreateTask = () => {
   const handleSubmit = (e) => {
     console.log("submitted");
 
-    fetch(`http://localhost:3001/createTask`, {
+    fetch(`https://task-management-server1.onrender.com/createTask`, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       headers: {
         "Content-Type": "application/json",
